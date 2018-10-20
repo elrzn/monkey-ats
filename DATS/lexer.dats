@@ -13,7 +13,7 @@ implement $Lexer.lexer_new (input) = @{
 }
 
 implement $Lexer.lexer_read_char (lexer) = {
-  val len = int0_of_size0 (string0_length (!lexer.input))
+  val len = int0_of_size0 (string0_length !lexer.input)
   // TODO get char at current position
   val () = !lexer.ch := (if !lexer.read_position >= len then '\0' else 'b')
   val () = !lexer.position := !lexer.read_position

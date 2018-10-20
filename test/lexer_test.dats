@@ -8,5 +8,5 @@ implement main0 () =
   let
     val l = $Lexer.lexer_new "TODO"
   in
-    println! (l.input)
+    println! l.input
   end
