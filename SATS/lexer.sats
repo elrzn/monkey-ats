@@ -28,7 +28,7 @@ typedef lexer = @{
 }
 
 fn lexer_new (input: string): lexer
-fn lexer_read_char (lexer: lexer): void
+fn lexer_read_char (lexer: ref lexer): void
 
 symintr .read_char
 overload .read_char with lexer_read_char
